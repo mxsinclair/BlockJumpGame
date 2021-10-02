@@ -12,3 +12,14 @@ function jump(){
     }, 500)
 }
 
+// Check if I have hit obstacle
+var obstacleHit = setInterval(() => {
+    var charTop = parseInt(window.getComputedStyle(char).getPropertyValue("top"));
+    var obstacleLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue("left"));
+
+    if (obstacleLeft<20 && obstacleLeft>0 && charTop >= 130) {
+        obstacle.style.animation = 'none';
+        obstacle.style.display = 'none';
+        alert('Game Over');
+    }
+}, 10);
