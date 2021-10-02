@@ -24,4 +24,10 @@
     position: relative;
     top: 130px;
     left: 980px;
+    animation: obstacleSlide 1s;
+}
+
+@keyframes obstacleSlide{
+    0%{left:980px;}
+    100%{left:-40px;}
 }
