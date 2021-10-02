@@ -17,7 +17,7 @@
     top: 150px;
 }
 
-.animate{
+.charJump{
     animation: jump 500ms;
 }
 
